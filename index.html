@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>last messages</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Pop-up 1 -->
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <h2>aloo gisaa</h2>
+      <p>maaf ganggu yaa kalo aku ganggu waktunya</p>
+      <button onclick="nextPopup()">pencet inii</button>
+    </div>
+  </div>
+
+  <!-- Pop-up 2 -->
+  <div class="popup" id="popup2" style="display: none;">
+    <div class="popup-content">
+      <h2>aku pengen kamu baca ini</h2>
+      <p>aku bikin sesuatu buat kamuu, tolong dibaca</p>
+      <button onclick="closePopup()">buka disinii</button>
+    </div>
+  </div>
+
+  <!-- Halaman isi confess -->
+  <div class="container" id="mainContent" style="display: none;">
+    <h1>haii gisaa 🌸</h1>
+    <p class="confess-text">
+      ini aku, kikii. udah lama ya kita ngga ngobrol lagi satu sama lain, rasanya setiap ngobrol sama kamu itu selalu seru setiap hari. first aku mau minta maaf ke kamu kalo akuu waktu ngilang gaada kabar disaat kamu lagi sedih orang tua kamu berantem, harusnya aku ada disitu nenangin kamu tapi aku kena musibah hp aku ilang aku juga ngga sempet ngabarin karna aku gapunya alat komunikasi selama aku kehilangan hp itu, aku minta maaf bgtt mungkin karna kejadian itu kamu ngejauh dari aku dan kalo aku punya kesalahan yang lain ke kamu dan bikin kamu sakit hati tolong maafin yaa😖😖. aku udah kehabisan ide buat bisa berbagi keseharian bareng kamu lagi, makasii banyak udah pernah ketawa bareng, sedih bareng dan maaf kalo bikin kamu kecewa. makasii yaa aku seneng bisa kenal kamu dan aku suka bangett kalo kamu panggil aku kiki karna kamu orang kedua setelah mama yang panggil aku pake nama ituu. thank you for being a part of my life, i'm so happy to know you and meet you. after all, i think i like you. mungkin ini pesan terakhir aku buat kamuu, makasii buat semuanya yaa gisaa maaf kalo alay aku bikin ini karna aku sering bermimpi tentang kamu dan aku bikin ini sendiri jadi im sorry if it's bad. be happy yaa, goodluck at your journey, i love you.
+
+
+    </p>
+    <p class="from">from: kikii 🐰</p>
+  </div>
+
+  <script>
+    function nextPopup() {
+      document.getElementById("popup1").style.display = "none";
+      document.getElementById("popup2").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popup2").style.display = "none";
+      document.getElementById("mainContent").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
